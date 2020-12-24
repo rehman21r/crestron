@@ -5,16 +5,16 @@ on:
     branches: master
 
 jobs:
-  deploy1:
+  # deploy1:
 
-    runs-on: runner1
+  #   runs-on: runner1
 
-    steps:
-    - uses: actions/checkout@v2
+  #   steps:
+  #   - uses: actions/checkout@v2
 
-    - name: Deploy to host1
-      run: |
-        cp * /home/crestron
+  #   - name: Deploy to host1
+  #     run: |
+  #       cp * /home/crestron
 
   deploy2:
 
