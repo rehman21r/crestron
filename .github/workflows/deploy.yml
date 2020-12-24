@@ -1,0 +1,17 @@
+name: Upload Python Package
+
+on:
+  push:
+    branches: master
+
+jobs:
+  deploy:
+
+    runs-on: runner1
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Deploy to host1
+      run: |
+        cp * /opt/src
