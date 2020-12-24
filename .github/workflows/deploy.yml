@@ -14,4 +14,4 @@ jobs:
 
     - name: Deploy to host1
       run: |
-        cp * /home/creston
+        cp * /home/crestron
