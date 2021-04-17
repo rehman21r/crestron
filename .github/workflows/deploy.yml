@@ -6,23 +6,25 @@ on:
 
 jobs:
   deploy_154:
-
     runs-on: runner_154
-
     steps:
     - uses: actions/checkout@v2
-
     - name: Deploy to host 154
       run: |
         cp * /home/crestron
 
   deploy_1005:
-
     runs-on: runner_1005
-
     steps:
     - uses: actions/checkout@v2
-
     - name: Deploy to host 1005
+      run: |
+        cp * /home/crestron
+
+  deploy_1017:
+    runs-on: runner_1017
+    steps:
+    - uses: actions/checkout@v2
+    - name: Deploy to host 1017
       run: |
         cp * /home/crestron
